@@ -1,0 +1,28 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ChatApp</h1>
+        <p>Create a username to sign in and start chatting worldwide!</p>
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <button onclick="signIn()">Sign In</button>
+        <div id="errorMsg" style="color: red;"></div>
+    </div>
+
+    <!-- Chat Button (Dot at the top for chatting page) -->
+    <button id="chatDot" class="chat-dot" onclick="goToChatPage()" style="display: none;">•</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
